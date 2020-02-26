@@ -7,10 +7,9 @@ const FriendCard = props => {
         // e.preventDefault();
         axiosWithAuth()
           .delete(`/api/friends/${props.id}`)
-        //   .then(this.props.history.push('/protected'))
-        //   .then(res => setFriendsList(res.data));
-        // setNewFriend({ name: "", age: "", email: "" });
-      };
+     //   .then(this.props.history.push('/protected'))
+
+    };
 
     console.log('card', props)
     return (
