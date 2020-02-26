@@ -34,9 +34,9 @@ class Login extends React.Component {
       .catch(err => console.log(err));
   };
 
-  logout = () => {
-      return localStorage.removeItem('token');
-  }
+  // logout = () => {
+  //     return localStorage.removeItem('token');
+  // }
 
   render() {
     return (
@@ -58,9 +58,9 @@ class Login extends React.Component {
           {this.state.isFetching && 'logging in'}
         </form>
         <div>
-        <form onSubmit={this.logout}>
+        {/* <form onSubmit={this.logout}>
             <button>Log Out</button>
-        </form>
+        </form> */}
         </div>
 
       </div>
